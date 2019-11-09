@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    function exec(vari) {
+        var code = document.getElementById("code").contentWindow.document;
+        console.log(vari);
+        code.open();
+        code.writeln(vari);
+        code.close();
+        //var objec = vari;
+        //var objec = $(vari);
+        //console.log(objec);
+        //document.body.append(objec);
+    }
+    </script>
+</head>
+<body>
+    <input name="textbox" type="text" />
+    <input name="buttonExecute" onclick="exec(document.getElementsByName('textbox')[0].value)" type="button" value="Execute" />
+    <iframe id="code"></iframe>
+</body>
