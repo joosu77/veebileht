@@ -21,9 +21,9 @@
         <p>Olete jõudnud kolme Tallinna nolgi veebilehele (YEET)! See veebileht peaks siia jõudnutele tutvustama, kuidas teha lihtsat veebilehte. <br> Veebileht näitab, kuidas alustada HTML-is ja CSS-is oma enda veebilehe loomist. Siin kasutatud võtted on väga algelised ja väga lihtsasti järele tehtavad isegi sinu konservatiivist vanaemeale!</p>
         
         <h3>Üks väike samm noorele informaatikule, ...</h3>
-        <p> Iga (või vähemalt enamik) HTML-koode algab deklaratsiooniga <code>&lt;!DOCTYPE html&gt;</code> ja tagi-dega <code>&lt;html&gt; &lt;/html&gt;</code>.
+        <p> Iga (või vähemalt enamik) HTML-koode algab deklaratsiooniga <code>&lt;!DOCTYPE html&gt;</code> ja märgenditega <code>&lt;html&gt; &lt;/html&gt;</code>.
             <br> Deklaratsiooni <code>&lt;!DOCTYPE html&gt;</code> on faili algusesse vaja selleks, et arvuti saaks aru, et tegemist on HTML-tüüpi failiga, mida ta avama hakkab. 
-                <code>&lt;html&gt;</code> <code>&lt;/html&gt;</code> tagide vahele kirjutatakse kogu ülejäänud HTML-kood.</p>
+                <code>&lt;html&gt;</code> <code>&lt;/html&gt;</code> märgendite vahele kirjutatakse kogu ülejäänud HTML-kood.</p>
 
         <div class="code">
             <code>
@@ -35,24 +35,28 @@
         </div>
 
         <h3>Pea, keha ja päis</h3>
-        <p>Tavaliselt kirjutatakse edasi tagid <code>&lt;head&gt;</code> <code>&lt;/head&gt;</code> ning <code>&lt;body&gt;</code> <code>&lt;/body&gt;</code>. 
-            <br>Head-tagide vahele kirjutatakse tavaliselt faili meta-andmed, nagu näiteks veebilehe tiitel (tagide <code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> vahele) ja CSS-stylesheeti link (tagi <code>&lt;link&gt;</code> sisse). 
-                Body-tagide vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
-            <br>Header-tagide <code>&lt;header&gt;</code> <code>&lt;/header&gt;</code> vahele kirjutatakse tavaliselt asjad, mida tahetakse lisada lehe päisesse, nagu näiteks minipilt, edasisuunavad navigatsioonilingid jne. </p>
+        <p>Tavaliselt kirjutatakse edasi märgendid <code>&lt;head&gt;</code> <code>&lt;/head&gt;</code> ning <code>&lt;body&gt;</code> <code>&lt;/body&gt;</code>. 
+            <br>Head-märgendite vahele kirjutatakse tavaliselt faili meta-andmed, nagu näiteks veebilehe tiitel (märgendite <code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> vahele) ja CSS-stylesheeti link (märgendi <code>&lt;link&gt;</code> sisse). 
+                Body-märgendite vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
+            <br>Header-märgendite <code>&lt;header&gt;</code> <code>&lt;/header&gt;</code> vahele kirjutatakse tavaliselt asjad, mida tahetakse lisada lehe päisesse, nagu näiteks minipilt, edasisuunavad navigatsioonilingid jne. </p>
 
         <h3>Skeleti (pealkirjad ja paragrahvid) konstrueerimine</h3>
-        <p>Veebilehele pealkirjade ja tekstilõikude lisamiseks on vastavalt tagid <code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code> ja <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>.
-            <br>H-tagid saavad olla <code>&lt;h1&gt;</code>-st <code>&lt;h6&gt;</code>-ni. Mida suurem on h järel olev number, seda väiksem on pealkirja suurus.
-                P-tagide vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse tagi <code>&lt;br&gt;</code>. </p>
+        <p>Veebilehele pealkirjade ja tekstilõikude lisamiseks on vastavalt märgendid <code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code> ja <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>.
+            <br>H-märgendid saavad olla <code>&lt;h1&gt;</code>-st <code>&lt;h6&gt;</code>-ni. Mida suurem on h järel olev number, seda väiksem on pealkirja suurus.
+                P-märgendite vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse märgendit <code>&lt;br&gt;</code>. </p>
 
         <h3>Liha lisamine</h3>
         <p> Veebilehele saab veel lisada ka nimekirju, tabeleid ja pilte.
-            <br>Nimekirja peab panema tagide <code>&lt;ul&gt;</code> <code>&lt;/ul&gt;</code> vahele. Nimekirja elemendid peab panema tagide <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code> vahele.
-            <br>Et pilte veebilehel näidata, on vaja kasutada tagi <code>&lt;img src=""&gt;</code>, kus jutumärkide vahele kirjutatakse pildi asukoht. 
-            <br>Veebilehe elemente saab teha aktiivseks, kui see panna tagide <code>&lt;a href=""&gt;</code> <code>&lt;/a&gt;</code> vahele, kus jutumärkide vahele tuleb panna link, kuhu elemendi peale vajutades sind edasi suunatakse.</p>
+            <br>Nimekirja peab panema märgendite <code>&lt;ul&gt;</code> <code>&lt;/ul&gt;</code> vahele. Nimekirja elemendid peab panema märgendite <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code> vahele.
+            <br>Et pilte veebilehel näidata, on vaja kasutada märgendit <code>&lt;img src=""&gt;</code>, kus jutumärkide vahele kirjutatakse pildi asukoht. 
+            <br>Veebilehe elemente saab teha aktiivseks, kui see panna märgendite <code>&lt;a href=""&gt;</code> <code>&lt;/a&gt;</code> vahele, kus jutumärkide vahele tuleb panna link, kuhu elemendile peale vajutades sind edasi suunatakse.</p>
+
+        <h3>Lahutajad</h3>
+        <p>Ehk dividerid ehk märgendid <code>&lt;div&gt;</code> <code>&lt;/div&gt;</code> .
+            <br>Div-märgendite vahele saab panna ükskõik, mis teisi veebilehe osi, et veebilehte loogiliselt liigendada. Samade div-märgendite vahel olevaid elemente saab erinevate parameetritega koos muuta. Et erinevaid div-märgendeid üksteisest eristada, saab igale div-märgendile määrata klassi: <code>&lt;div class=""&gt;</code>.</p>
 
         <h3>... üks suur hüpe tööandjale.</h3>
-        <p> Ja leht ongi valmis!</p>
+        <p> Nende kõike sagedamini kasutatavate märgenditega on võimalik juba luua normaalne veebileht, kus saab igast infot esitada.</p>
 
     </div>
 
