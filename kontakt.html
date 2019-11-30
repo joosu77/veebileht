@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Veebileht veebilehe tegemisest</title>
+    <script>
+    function initMap() {
+        var uluru = {lat: 58.3782485, lng: 26.7124846};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLt1eto6pojPJtV-KD4ToiK66iV0lhqck&callback=initMap"></script>
 </head>
+
 <body>
-    <p>fuck go <a href="index.html">back</a></p>
-    
+    <header>
+        <a href="index.html">Veebilehe tegemine</a>
+        <a href="redaktor.html">Koodiredaktor</a>
+        <a href="kontakt.html">Kontakt</a>
+    </header>
+    <div class="content">
+        <p>Kodu: Liivi 2</p>
+        <div id="map" style="height:300px;width:300px;"></div>
+    </div>
+
 </body>
 </html>
