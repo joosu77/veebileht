@@ -40,3 +40,11 @@ h1 {
     text-align: center;
 }
 
+.code {
+    font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #d8c3a5;
+    padding: 1%;
+    border: solid #e85a4f;
+    border-radius: 25px;
+}
