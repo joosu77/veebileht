@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koodiredaktor</title>
+    <script>
+        function exec(vari) {
+            var code = document.getElementById("code").contentWindow.document;
+            console.log(vari);
+            code.open();
+            code.writeln(vari);
+            code.close();
+        }
+    </script>
+    <style>
+        #inp {
+            height: 100%;
+            width: 50%;
+        }
+        iframe {
+            height: 100%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="textbox" id="inp" ></textarea>
+    <input name="buttonExecute" onclick="exec(document.getElementsByName('textbox')[0].value)" type="button" value="Execute" />
+    <iframe id="code"></iframe>
+
+</body>
+</html>
