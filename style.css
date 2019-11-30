@@ -8,8 +8,10 @@ header {
     border-bottom: #e85a4f solid;
 }
 
-header p {
+header a {
     margin: 1.5%;
+    color: #e85a4f;
+    text-decoration: none;
 }
 
 
