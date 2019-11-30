@@ -2,106 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="redaktor.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Koodiredaktor</title>
-    <script>
-        function exec(vari) {
-            var code = document.getElementById("code").contentWindow.document;
-            console.log(vari);
-            code.open();
-            code.writeln(vari);
-            code.close();
-        }
-    </script>
-    <style>
-        #inp {
-            height: 99%;
-            width: 49%;
-            resize: none;
-            float: left;
-            font-family: monospace;
-            background: black;
-            color: #aaaaaa;
-            border-radius:10px;
-            text-decoration: none;
-        }
-        iframe {
-            height: 99%;
-            width: 49%;
-            float:right;
-            border-right: 2px solid white;
-            border-bottom: 2px solid white;
-            border-left: 2px solid #999999;
-            border-top: 2px solid #999999;
-            border-radius: 10px;
-            background: white;/*#444444*/
-        }
-        body {
-            height: 100%;
-            width: 100%;
-            background: #666666;
-        }
-        html {
-            height: 100%;
-            width: 100%;
-        }
-        #exec {
-            float: left;
-            border: 2px solid #bbbbbb;
-            background: #ffe;
-            border-radius: 5px;
-            float:left;
-            margin:10px;
-        }
-        #execlink {
-            width: 100%;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            color: black;
-            margin: 5px;
-        }
-        #execlink:hover {
-            color: red;
-            background: #eff;
-            cursor: pointer;
-        }
-        #home {
-            /*width: 6em;*/
-            /*height: 2em;*/
-            border: 2px solid #bbbbbb;
-            background: #ffe;
-            border-radius: 5px;
-            float:left;
-            margin:10px;
-        }
-        #homelink {
-            width: 100%;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            color: black;
-            margin:5px;
-        }
-        #homelink:hover {
-            color: red;
-            background: #eff;
-        }
-        #buttons {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-        }
-    </style>
+    <script type="text/javascript" src="redaktor.js"></script>
 </head>
 <body>
     <textarea name="textbox" id="inp" autofocus>Siia saab HTML koodi kirjutada</textarea>
     <div id="buttons">
-    <div id="exec" name="buttonExecute" onload="exec(document.getElementsByName('textbox')[0].value)"type="button" value="Loo HTML"
-    ><a id="execlink" onclick="exec(document.getElementsByName('textbox')[0].value)" >Loo HTML</a></div>
-    <div id="home"><a id="homelink" href="index.html">Avalehele tagasi</a></div>
+        <div id="exec" name="buttonExecute">
+            <a id="execlink" onclick="exec(document.getElementsByName('textbox')[0].value)" >Loo HTML</a>
+        </div>
+        <div id="home"><a id="homelink" href="index.html">Avalehele tagasi</a></div>
     </div>
     <iframe id="code"></iframe>
 
