@@ -123,6 +123,8 @@
                         el.innerHTML = board[i][j];
                     }
                 }
+                var sc = document.getElementById("score");
+                sc.innerHTML = "Score: "+score.toString(10);
                 await sleep(500);  
             }
         }
@@ -131,7 +133,8 @@
 <body>
     <input type="button" value="alusta" onclick="game()"/>
     <a href="index.html">Tagasi kodulehele</a>
-    <table id="board" border="1px">
+    <p id="score">Score: </p>
+    <table id="board">
 
     </table>
 </body>
