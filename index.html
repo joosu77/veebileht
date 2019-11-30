@@ -13,6 +13,7 @@
         <a href="index.html">Veebilehe tegemine</a>
         <a href="redaktor.html">Koodiredaktor</a>
         <a href="kontakt.html">Kontakt</a>
+        <a href="snake.html">SnaEk</a>
     </header>
     <div class="content">
         <h1>Kuidas teha veebilehte???</h1>
@@ -40,10 +41,43 @@
             <br>Body-märgendite vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
             <br>Header-märgendite <code>&lt;header&gt;</code> <code>&lt;/header&gt;</code> vahele kirjutatakse tavaliselt asjad, mida tahetakse lisada lehe päisesse, nagu näiteks minipilt, edasisuunavad navigatsioonilingid jne. </p>
 
+        <div class="code">
+            <code>
+                &lt;head&gt; <br>
+                    &emsp;&lt;title&gt;Pealkiri&lt;/title&gt; <br>
+                    &emsp;&lt;link rel="stylesheet" href="style.css"&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                    &emsp;&lt;header&gt; <br>
+                        &emsp;&emsp;... <br>
+                    &emsp;&lt;/header&gt; <br>
+                    &emsp;... <br>
+                &lt;/body&gt; <br>
+            </code>
+        </div>
+
         <h3>Skeleti (pealkirjad ja paragrahvid) konstrueerimine</h3>
         <p>Veebilehele pealkirjade ja tekstilõikude lisamiseks on vastavalt märgendid <code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code> ja <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>.
             <br>H-märgendid saavad olla <code>&lt;h1&gt;</code>-st <code>&lt;h6&gt;</code>-ni. Mida suurem on h järel olev number, seda väiksem on pealkirja suurus.
             <br>P-märgendite vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse märgendit <code>&lt;br&gt;</code>. </p>
+                
+        <div class="code">
+            <code>
+                &lt;h1&gt;Pealkiri&lt;/h1&gt; <br>
+                &lt;h2&gt;Pealkiri&lt;/h2&gt; <br>
+                &lt;h3&gt;Pealkiri&lt;/h3&gt; <br>
+                &lt;h4&gt;Pealkiri&lt;/h4&gt; <br>
+                &lt;h5&gt;Pealkiri&lt;/h5&gt; <br>
+                &lt;h6&gt;Pealkiri&lt;/h6&gt; <br>
+                &lt;p&gt;lorem ipsum &lt;br&gt; lorem ipsum&lt;/p&gt;
+            </code>
+        </div>
+
+        <form action="redaktor.html">
+            <input type="submit" value="Proovi järgi" />
+        </form>
+
+        <br>
 
         <h3>Liha lisamine</h3>
         <p> Veebilehele saab veel lisada ka nimekirju, tabeleid ja pilte.
@@ -86,7 +120,9 @@
 
         <h3>... üks suur hüpe tööandjale.</h3>
         <p> Nende kõike sagedamini kasutatavate märgenditega on võimalik juba luua normaalne veebileht, kus saab igast infot esitada.</p>
-
+        
+        
+        
     </div>
 
 </body>
