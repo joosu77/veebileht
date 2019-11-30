@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -37,23 +37,52 @@
         <h3>Pea, keha ja päis</h3>
         <p>Tavaliselt kirjutatakse edasi märgendid <code>&lt;head&gt;</code> <code>&lt;/head&gt;</code> ning <code>&lt;body&gt;</code> <code>&lt;/body&gt;</code>. 
             <br>Head-märgendite vahele kirjutatakse tavaliselt faili meta-andmed, nagu näiteks veebilehe tiitel (märgendite <code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> vahele) ja CSS-stylesheeti link (märgendi <code>&lt;link&gt;</code> sisse). 
-                Body-märgendite vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
+            <br>Body-märgendite vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
             <br>Header-märgendite <code>&lt;header&gt;</code> <code>&lt;/header&gt;</code> vahele kirjutatakse tavaliselt asjad, mida tahetakse lisada lehe päisesse, nagu näiteks minipilt, edasisuunavad navigatsioonilingid jne. </p>
 
         <h3>Skeleti (pealkirjad ja paragrahvid) konstrueerimine</h3>
         <p>Veebilehele pealkirjade ja tekstilõikude lisamiseks on vastavalt märgendid <code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code> ja <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>.
             <br>H-märgendid saavad olla <code>&lt;h1&gt;</code>-st <code>&lt;h6&gt;</code>-ni. Mida suurem on h järel olev number, seda väiksem on pealkirja suurus.
-                P-märgendite vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse märgendit <code>&lt;br&gt;</code>. </p>
+            <br>P-märgendite vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse märgendit <code>&lt;br&gt;</code>. </p>
 
         <h3>Liha lisamine</h3>
         <p> Veebilehele saab veel lisada ka nimekirju, tabeleid ja pilte.
             <br>Nimekirja peab panema märgendite <code>&lt;ul&gt;</code> <code>&lt;/ul&gt;</code> vahele. Nimekirja elemendid peab panema märgendite <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code> vahele.
+            <br>Tabeli saamiseks tuleb panna asi märgendite <code>&lt;table&gt;</code> <code>&lt;/table&gt;</code> vahele, tabeli read pannakse märgendite <code>&lt;tr&gt;</code> <code>&lt;/tr&gt;</code> vahele, tabeli elemendid pannakse märgendite <code>&lt;td&gt;</code> <code>&lt;/td&gt;</code> või <code>&lt;th&gt;</code> <code>&lt;/th&gt;</code> vahele. 
             <br>Et pilte veebilehel näidata, on vaja kasutada märgendit <code>&lt;img src=""&gt;</code>, kus jutumärkide vahele kirjutatakse pildi asukoht. 
             <br>Veebilehe elemente saab teha aktiivseks, kui see panna märgendite <code>&lt;a href=""&gt;</code> <code>&lt;/a&gt;</code> vahele, kus jutumärkide vahele tuleb panna link, kuhu elemendile peale vajutades sind edasi suunatakse.</p>
 
+        <div class="code">
+            <code>
+                &lt;ul&gt; <br>
+                    &emsp;&lt;li&gt;Esimene element&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Teine element&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Kolmas element&lt;/li&gt; <br>
+                &lt;/ul&gt; <br>
+                <br>
+                &lt;table&gt; <br>
+                    &emsp;&lt;tr&gt; <br>
+                        &emsp;&emsp;&lt;th&gt;Pealkiri1&lt;/th&gt; <br>
+                        &emsp;&emsp;&lt;th&gt;Pealkiri1&lt;/th&gt; <br>
+                    &emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;tr&gt; <br>
+                        &emsp;&emsp;&lt;td&gt;Elem1&lt;/td&gt; <br>
+                        &emsp;&emsp;&lt;td&gt;Elem2&lt;/td&gt; <br>
+                    &emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;tr&gt; <br>
+                        &emsp;&emsp;&lt;td&gt;Elem3&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;td&gt;Elem4&lt;/td&gt; <br>
+                    &emsp;&lt;/tr&gt; <br>
+                &lt;/table&gt; <br>
+                <br>
+                &lt;a href="https://www.cs.ut.ee/et"&gt;Link!&lt;/a&gt;
+                
+            </code>
+        </div>
+
         <h3>Lahutajad</h3>
         <p>Ehk dividerid ehk märgendid <code>&lt;div&gt;</code> <code>&lt;/div&gt;</code> .
-            <br>Div-märgendite vahele saab panna ükskõik, mis teisi veebilehe osi, et veebilehte loogiliselt liigendada. Samade div-märgendite vahel olevaid elemente saab erinevate parameetritega koos muuta. Et erinevaid div-märgendeid üksteisest eristada, saab igale div-märgendile määrata klassi: <code>&lt;div class=""&gt;</code>.</p>
+            <br>Div-märgendite vahele saab panna ükskõik mis teisi veebilehe osi, et veebilehte loogiliselt liigendada. Samade div-märgendite vahel olevaid elemente saab erinevate parameetritega koos muuta. Et erinevaid div-märgendeid üksteisest eristada, saab igale div-märgendile määrata klassi: <code>&lt;div class=""&gt;</code>.</p>
 
         <h3>... üks suur hüpe tööandjale.</h3>
         <p> Nende kõike sagedamini kasutatavate märgenditega on võimalik juba luua normaalne veebileht, kus saab igast infot esitada.</p>
@@ -62,4 +91,3 @@
 
 </body>
 </html>
-<code>&lt; &gt;</code>
