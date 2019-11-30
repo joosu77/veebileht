@@ -1,15 +1,22 @@
 header {
-    display: flex;
     color: #e85a4f;
     background-color: #d8c3a5;
+    padding: 0 10em 0 10em;
+    display: flex;
     font-weight: bold;
-    padding: 0;
-    text-align: center;
+    justify-content: flex-end;
+    border-bottom: #e85a4f solid;
 }
+
+header p {
+    margin: 1.5%;
+}
+
 
 html {
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main {
@@ -23,9 +30,11 @@ body {
 }
 
 .content {
-    padding: 0 10em 0 10em;
+    margin: 1% 10em 0 10em;
+    padding: 1%;
 }
 
-header p {
-    margin: 20px;
+h1 {
+    text-align: center;
 }
+
