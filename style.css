@@ -1,6 +1,8 @@
 header {
     display: flex;
-    background-color: #ff6600;
+    color: #e85a4f;
+    background-color: #d8c3a5;
+    font-weight: bold;
     padding: 0;
     text-align: center;
 }
@@ -15,8 +17,13 @@ html {
 }
 
 body {
-    padding: 0;
+    color: #373737;
+    background-color: #eae7dc;
     margin: 0;
+}
+
+.content {
+    padding: 0 10em 0 10em;
 }
 
 header p {
