@@ -39,12 +39,43 @@
             <br>Head-tagide vahele kirjutatakse tavaliselt faili meta-andmed, nagu näiteks veebilehe tiitel (tagide <code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> vahele) ja CSS-stylesheeti link (tagi <code>&lt;link&gt;</code> sisse). 
                 Body-tagide vahele kirjutatakse kõik, mida tahetakse veebilehel kuvada. 
             <br>Header-tagide <code>&lt;header&gt;</code> <code>&lt;/header&gt;</code> vahele kirjutatakse tavaliselt asjad, mida tahetakse lisada lehe päisesse, nagu näiteks minipilt, edasisuunavad navigatsioonilingid jne. </p>
+        
+        <div class="code">
+            <code>
+                &lt;head&gt; <br>
+                    &emsp;&lt;title&gt;Pealkiri&lt;/title&gt; <br>
+                    &emsp;&lt;link rel="stylesheet" href="style.css"&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                    &emsp;&lt;header&gt; <br>
+                        &emsp;&emsp;... <br>
+                    &emsp;&lt;/header&gt; <br>
+                    &emsp;... <br>
+                &lt;/body&gt; <br>
+            </code>
+        </div>
 
         <h3>Skeleti (pealkirjad ja paragrahvid) konstrueerimine</h3>
         <p>Veebilehele pealkirjade ja tekstilõikude lisamiseks on vastavalt tagid <code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code> ja <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>.
             <br>H-tagid saavad olla <code>&lt;h1&gt;</code>-st <code>&lt;h6&gt;</code>-ni. Mida suurem on h järel olev number, seda väiksem on pealkirja suurus.
                 P-tagide vahele kirjutatakse tekstilõigud, mida tahetakse veebilehel kuvada. Uute ridade saamiseks tekstilõikude sees kasutatakse tagi <code>&lt;br&gt;</code>. </p>
+        
+        <div class="code">
+            <code>
+                &lt;h1&gt;Pealkiri&lt;/h1&gt; <br>
+                &lt;h2&gt;Pealkiri&lt;/h2&gt; <br>
+                &lt;h3&gt;Pealkiri&lt;/h3&gt; <br>
+                &lt;h4&gt;Pealkiri&lt;/h4&gt; <br>
+                &lt;h5&gt;Pealkiri&lt;/h5&gt; <br>
+                &lt;h6&gt;Pealkiri&lt;/h6&gt; <br>
+                &lt;p&gt;lorem ipsum &lt;br&gt; lorem ipsum&lt;/p&gt;
+            </code>
+        </div>
 
+        <form action="redaktor.html">
+            <input type="submit" value="Proovi järgi" />
+        </form>
+        <br>
         <h3>Liha lisamine</h3>
         <p> Veebilehele saab veel lisada ka nimekirju, tabeleid ja pilte.
             <br>Nimekirja peab panema tagide <code>&lt;ul&gt;</code> <code>&lt;/ul&gt;</code> vahele. Nimekirja elemendid peab panema tagide <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code> vahele.
