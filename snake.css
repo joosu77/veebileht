@@ -1,0 +1,39 @@
+#alustalink {
+    text-decoration: none;
+    float: left;
+    text-align: left;
+    left: 0px;
+    position:relative;
+}
+#score {
+    float:left;
+    margin: 1.5%;
+}
+header {
+    color: #e85a4f;
+    background-color: #d8c3a5;
+    padding: 0 10em 0 10em;
+    font-weight: bold;
+    border-bottom: #e85a4f solid;
+    height:3.5em;
+}
+
+header a {
+    margin: 1.5%;
+    color: #e85a4f;
+    text-decoration: none;
+    float: right;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header a:hover {
+    color: #373737;
+    cursor: pointer;
+}
+table {
+    font-size: 3em;
+    position: absolute;
+    left:40%
+}
