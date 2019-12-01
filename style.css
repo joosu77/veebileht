@@ -69,3 +69,17 @@ input {
     border: solid #e85a4f;
     border-radius: 25px;
 }
+#proovi {
+    text-align: center;
+    border-radius:5px;
+    border: 2px red solid;
+    float:right;
+    background: #d8c3a5;
+    margin:5px;
+    padding:5px;
+}
+#proovilink {
+    text-decoration: none;
+    color: #e85a4f;
+    border-radius:5px;
+}
