@@ -6,7 +6,7 @@ window.onload = function() {
     var table = document.getElementById("board");
     for( var i = 0; i < 10; i++ ){
         var row = document.createElement("tr");
-        for( var j = 0; j < 10; j++ ){
+        for( var j = 0; j < 19; j++ ){
             var col = document.createElement("td");
             col.innerHTML = ' ';
             col.setAttribute("id",i.toString(10)+':'+j.toString(10));
@@ -30,20 +30,20 @@ document.addEventListener('keydown', function(event) {
 }, true);
 async function game(){
     var X = 10;
-    var Y = 10;
+    var Y = 19;
     var s = [[5,5]];
     var sdir = 0;
     var score = 0;
-    var board = [['X','X','X','X','X','X','X','X','X','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ','S',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ','B',' ',' ',' ',' ',' ',' ','X'],
-                 ['X',' ',' ',' ',' ',' ',' ',' ',' ','X'],
-                 ['X','X','X','X','X','X','X','X','X','X']];
+    var board = [['X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ','S',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ','B',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','X'],
+                 ['X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X']];
     var over = 0;
     while (!over){
         var valik = 0;
@@ -108,8 +108,8 @@ async function game(){
             board[s[s.length-1][0]][s[s.length-1][1]] = ' ';
             s.pop();
         }
-        for (var i=0;i<10;i++){
-            for (var j=0;j<10;j++){
+        for (var i=0;i<X;i++){
+            for (var j=0;j<Y;j++){
                 var el = document.getElementById(i.toString(10)+":"+j.toString(10));
                 el.innerHTML = board[i][j];
             }
