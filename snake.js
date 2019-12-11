@@ -15,6 +15,12 @@ window.onload = function() {
         table.appendChild(row);
     }
 };
+
+var kiirus=500;
+function kiire(k){
+    kiirus = k;
+}
+
 var button = 1;
 document.addEventListener('keydown', function(event) {
     if (event.keyCode == 37) {
@@ -116,6 +122,6 @@ async function game(){
         }
         var sc = document.getElementById("score");
         sc.innerHTML = "Score: "+score.toString(10);
-        await sleep(500);  
+        await sleep(kiirus);  
     }
 }
